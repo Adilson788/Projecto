@@ -1,10 +1,10 @@
-import datetime
+from datetime import datetime
 print('='*30)
 print('Alistamento Militar'.center(30))
 print('='*30)
 Nome = str(input('Nome: '))
 nascimento = int(input('Ano de Nascimento: '))
-ano_atual = datetime.datetime.today().year
+ano_atual = datetime.today().year
 idade = ano_atual - nascimento
 if idade == 18:
     print(f'{Nome}, voce deve se Apresentar, porque neste ano de {ano_atual} completas {idade} anos')
